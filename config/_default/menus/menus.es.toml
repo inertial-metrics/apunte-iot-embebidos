@@ -15,9 +15,17 @@
 
 [[main]]
     name = "Apunte"
-    url = "/iot/intro/"
+    url = "/iot/inicio/intro"
     weight = 30
     identifier = "apunte-iot"
+    parent = "iot-menu"
+
+
+[[main]]
+    name = "Tareas"
+    identifier = "tareas-iot"
+    weight = 40
+    url = "/iot/tareas/"
     parent = "iot-menu"
 
 #  Embedidos NAVIGATION
