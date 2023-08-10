@@ -7,23 +7,42 @@
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
       <!-- 2 Boostrap button on 2 column grd -->
-      <a
-        style="text-decoration: none"
-        href="{{ .Site.BaseURL }}iot/inicio/intro"
+      <div
+        class="container d-flex justify-content-center align-items-center "
       >
-        <button type="button" class="btn btn-info btn-lg btn-block">
-          Apunte IoT
-        </button>
-      </a>
-      <a style="text-decoration: none" href="{{ .Site.BaseURL }}embedidos/">
-        <button
-          style="margin-left: 30px"
-          type="button"
-          class="btn btn-warning btn-lg btn-block"
-        >
-          Apunte Embedidos
-        </button>
-      </a>
+        <div class="row justify-content-center">
+          <!-- Added justify-content-center -->
+          <div class="col-12 col-md-auto text-center mb-3 mb-md-0">
+            <!-- Adjusted margin for better spacing on mobile -->
+            <a
+              style="text-decoration: none"
+              href="{{ .Site.BaseURL }}iot/inicio/intro"
+            >
+              <button
+                type="button"
+                class="btn btn-info btn-lg"
+                style="width: 196px; box-sizing: border-box;"
+              >
+                Apunte IoT
+              </button>
+            </a>
+          </div>
+          <div class="col-12 col-md-auto text-center">
+            <a
+              style="text-decoration: none"
+              href="{{ .Site.BaseURL }}embedidos/"
+            >
+              <button
+                type="button"
+                class="btn btn-warning btn-lg"
+                style="width: 196px; box-sizing: border-box;"
+              >
+                Apunte Embedidos
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

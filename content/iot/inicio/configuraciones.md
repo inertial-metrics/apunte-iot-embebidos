@@ -55,7 +55,7 @@ Para completar la tarea, tendrán que establecer un servidor Python en la Raspbe
 2. Instalen el Rasp PI OS. El instalador está disponible en esta página.
 3. Con la tarjeta insertada, conecten la Raspberry Pi a:
    - Una pantalla mediante un cable HDMI (Nota: En Beauchef, especialmente en áreas del DCC como el laboratorio Toqui, las pantallas no tienen entrada HDMI).
-   - Un ratón.
+   - Un mouse.
    - Un teclado.
    Una vez conectados estos dispositivos, enciendan la Raspberry Pi y procedan con la instalación del sistema operativo, seleccionando sus opciones preferidas.
 4. Una vez finalizada la configuración del sistema operativo, podrán acceder a la Raspberry Pi normalmente.
