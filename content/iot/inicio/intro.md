@@ -14,7 +14,6 @@ Vamos a empezar usando WiFi para nuestra comunicación. Nos enfocaremos en los p
 
 Al final, juntaremos lo que hemos aprendido de los dos protocolos y haremos una interfaz de control fácil de usar. ¡Espero que estén listos para aprender y divertirse!
 
-
 ## Raspberry Pi
 
 <figure>
@@ -25,7 +24,6 @@ Al final, juntaremos lo que hemos aprendido de los dos protocolos y haremos una 
 Por el lado de la Raspberry Pi se encuentra el software que interactua con la ESP-32, para esto se utilizara principalmente Python.
 
 ## ESP-32
-
 
 <figure>
     <img src="https://mcielectronics.cl/wp-content/uploads/2022/04/product_template_29541.png" width="300"">
