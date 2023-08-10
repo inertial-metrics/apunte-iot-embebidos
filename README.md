@@ -34,6 +34,12 @@ Luego para agregar temas a esta seccion se puede correr:
 npm run create iot/nueva_seccion/nuevo_tema.md
 ```
 
+Para correr en docker agregar a cada comando
+
+```bash
+docker compose run site npm run create path/to/new/page
+```
+
 Se pueden revisar los ejemplos de las paginas ya existentes para ver como se escribe el contenido.
 
 **Nota:** 
