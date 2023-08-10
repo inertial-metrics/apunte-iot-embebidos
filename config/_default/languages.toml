@@ -1,0 +1,8 @@
+[es]
+  languageName = "Spanish"
+  contentDir = "content"
+  weight = 10
+  [es.params]
+    languageISO = "ES"
+    languageTag = "es-ES"
+
