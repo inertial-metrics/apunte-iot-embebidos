@@ -37,7 +37,7 @@ idf.py create-project mi_proyecto
 
 ### Código del archivo `main.c`
 
-A continuación, un programa básico para conectar la ESP32 a una red WiFi:
+A continuación, un programa básico que unicamente imprime "Hello world!" en la consola y reinicia el dispositivo después de 10 segundos.
 
 ```c
 #include <stdio.h>
@@ -57,15 +57,5 @@ void app_main(void){
     esp_restart(); // Reinicia el dispositivo
 }
 ```
-
-### Descripción
-
-El punto de inicio de cualquier aplicación ESP-IDF es la función `app_main()`. En este programa:
-
-1. **Inicialización**: Se inicia el sistema NVS (Non-Volatile Storage) y se configura la interfaz STA (Estación) para WiFi.
-2. **Manejadores de Evento**: Se registran manejadores de eventos para eventos de WiFi y eventos de IP.
-3. **Configuración y Conexión WiFi**: Se configura la ESP32 en modo Estación (STA) y se intenta conectar a la red WiFi especificada.
-
-### Conclusión
 
 Un proyecto ESP-IDF típicamente tiene una estructura específica, con el punto de inicio en la función `app_main()` de `main.c`. El código anterior es un programa básico que muestra cómo conectar la ESP32 a una red WiFi. Puedes expandir este programa incluyendo más características como manejo de errores, reconexión automática entre otros.

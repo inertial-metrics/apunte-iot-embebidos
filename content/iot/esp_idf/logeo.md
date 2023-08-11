@@ -47,7 +47,7 @@ Esto imprimirá el mensaje "Iniciando aplicación" en la consola, junto con el T
 
 ## Configuración del Nivel de Logeo:
 
-Puedes definir el nivel de logeo que desees que se muestre. Por ejemplo, si solo quieres ver logs de errores y advertencias, puedes configurarlo así. Esto se hace generalmente a través del menú de configuración (menuconfig) bajo la opción Component config > Log output.
+Puedes definir el nivel de logeo que desees que se muestre. Por ejemplo, si solo quieres ver logs de errores y advertencias, puedes configurarlo así. Esto se hace generalmente a través del menú de configuración (menuconfig) bajo la opción Component config > Log output. El valor por defecto es `"Info"`, por lo que se mostrarán todos los mensajes excepto los de depuración y verbose.
 
 ### Formato
 

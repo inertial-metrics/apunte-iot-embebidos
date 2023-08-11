@@ -8,9 +8,9 @@ images: []
 weight: 30
 ---
 
-### Instalacion del sistema operativo
+Para completar las tarea, tendrán que establecer un servidor Python en la Raspberry Pi, la cual deberá mantener activado su wifi para que el ESP32 pueda conectarse de manera inalámbrica. El primer paso es preparar la Raspberry Pi 3 adecuadamente.
 
-Para completar la tarea, tendrán que establecer un servidor Python en la Raspberry Pi, la cual deberá mantener activado su wifi para que el ESP32 pueda conectarse de manera inalámbrica. El primer paso es preparar la Raspberry Pi 3 adecuadamente. Sigan estos pasos para ello:
+### Instalacion del sistema operativo
 
 1. Obtengan una tarjeta mini SD donde puedan instalar el sistema operativo y que sirva como memoria.
 2. Instalen el Rasp PI OS. El instalador está disponible en esta página.
