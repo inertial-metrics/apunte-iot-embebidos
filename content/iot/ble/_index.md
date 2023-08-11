@@ -1,5 +1,5 @@
 ---
-title: "Ble"
+title: "Bluetooth"
 description: ""
 date: 2023-08-10T15:07:38Z
 lastmod: 2023-08-10T15:07:38Z
