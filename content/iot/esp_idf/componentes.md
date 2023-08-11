@@ -71,7 +71,7 @@ list(APPEND EXTRA_COMPONENT_DIRS "./components")
 
 ## Paso 5: Buildear el proyecto
 
-Cuando compiles el proyecto usando idf.py build, ESP-IDF detectará automáticamente los componentes en el directorio components y los incluirá en la compilación.
+Cuando compiles el proyecto usando `idf.py build`, ESP-IDF detectará automáticamente los componentes en el directorio components y los incluirá en la compilación.
 
 **Nota**: Dependencias y como agregarlas a tu componente
 

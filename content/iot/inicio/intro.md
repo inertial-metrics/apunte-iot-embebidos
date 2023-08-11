@@ -8,11 +8,11 @@ images: []
 weight: 1
 ---
 
-Bienvenidos al curso de IoT (Internet of Things). En este curso aprenderemos cómo se comunica un Raspberry Pi, ese pequeño computador con Linux, con un ESP-32, un microcontrolador.
+Bienvenidos al curso de IoT (Internet of Things). En este curso aprenderemos cómo se comunica un Raspberry Pi, un pequeño computador con Linux, con un ESP-32, un microcontrolador.
 
 Vamos a empezar usando WiFi para nuestra comunicación. Nos enfocaremos en los protocolos TCP y UDP. Luego, cambiaremos y aprenderemos sobre comunicación con Bluetooth usando BLE.
 
-Al final, juntaremos lo que hemos aprendido de los dos protocolos y haremos una interfaz de control fácil de usar. ¡Espero que estén listos para aprender y divertirse!
+Al final, juntaremos lo que hemos aprendido de los dos protocolos y haremos una interfaz de control grafica.
 
 ## Raspberry Pi
 

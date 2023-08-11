@@ -10,7 +10,7 @@ weight: 10
 
 ## Primer proyecto
 
-Una vez que hayan instalado el ESP-IDF, estaremos listos para comenzar con nuestro primer proyecto. Usaremos el ejemplo `Hello_World` disponible en el repositorio.
+Una vez que hayan instalado el ESP-IDF, estaremos listos para comenzar con nuestro primer proyecto. Usaremos el ejemplo `get-starded` (El Hello World de ESP-IDF) disponible en el repositorio.
 
 ## 1. Copiar el ejemplo a un directorio de trabajo
 
@@ -19,7 +19,7 @@ La carpeta a copiar se descargó durante la instalación. Pueden encontrarla en 
 - En Windows: `C:\Users\MiUsuario\Espressif\releases`
 - En Linux: `~/esp/esp-idf`
 
-La ruta exacta será `examples/get-started`.
+La ruta exacta dentro del repo será `examples/get-started`.
 
 ## 2. Conectar la ESP32
 
@@ -41,11 +41,24 @@ sudo chown <tu usuario> /dev/<puerto de conexión>
 
 ## 3. Configurar el proyecto
 
+**Importante** - Recuerda que para utilzar las herramientas de ESP-IDF, debes abrir una terminal en la carpeta donde se encuentra el proyecto y configurar el entorno. Para esto, en la terminal, ejecuten:
+
+```bash
+. $HOME/esp/esp-idf/export.sh
+```
+
+Esto les permitirá usar las herramientas de ESP-IDF en la terminal actual ya que exporta las variables de entorno necesarias.
+
+Para no tener que recordar esta ruta pueden generar un alias en su archivo `.bashrc` o `.zshrc` (dependiendo de su shell) con el siguiente comando:
+
+```bash
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+```
+
 Especifiquen qué dispositivo están usando y accedan a la configuración del proyecto:
 
 ```bash
-cd ~/esp/hello_world
-idf.py set-target esp32
+cd ~/esp/examples/get-started/hello_world
 idf.py menuconfig
 ```
 
@@ -83,6 +96,12 @@ Observen el comportamiento del dispositivo con el comando:
 
 ```bash
 idf.py -p <PORT> monitor
+```
+
+Por lo general, el puerto de conexión es el mismo que se usó para flashear el dispositivo y en caso de que solo tengan una ESP32 conectada, no es necesario especificarlo y su comando quedaría (lo mismo para los comandos anteriores):
+
+```bash
+idf.py monitor
 ```
 
 Este comando les permitirá ver la salida del programa en la consola. Para salir, presionen `Ctrl + ]`.
