@@ -3,11 +3,11 @@ const mode = document.getElementById('mode');
 
 function toggleDarkMode(isDarkMode) {
     const syntaxStyle = document.getElementById('syntax-style');
-    
+    let BaseURL = syntaxStyle.getAttribute('data-base');
     if (isDarkMode) {
-      syntaxStyle.href = '/css/dracula.css';
+      syntaxStyle.href = BaseURL+'css/dracula.css';
     } else {
-      syntaxStyle.href = '/css/github.css';
+      syntaxStyle.href = BaseURL+'css/github.css';
     }
   }
 
