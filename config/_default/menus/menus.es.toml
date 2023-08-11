@@ -1,9 +1,4 @@
 
-
-
-
-
-
 # IOT NAVIGATION
 
 [[main]]
@@ -15,7 +10,7 @@
 
 [[main]]
     name = "Apunte"
-    url = "/iot/inicio/intro"
+    url = "/iot/inicio/intro/"
     weight = 30
     identifier = "apunte-iot"
     parent = "iot-menu"
@@ -28,6 +23,12 @@
     url = "/iot/tareas/"
     parent = "iot-menu"
 
+[[main]]
+    name = "Clases"
+    identifier = "clases-iot"
+    weight = 50
+    url = "/iot/clases/"
+    parent = "iot-menu"
 #  Embedidos NAVIGATION
 
 [[main]]
@@ -38,7 +39,7 @@
 
 [[main]]
     name = "Apunte"
-    url = "/embedidos/"
+    url = "/embedidos/inicio/intro/"
     weight = 40
     identifier = "apunte-embedidos"
     parent = "embedidos-menu"
