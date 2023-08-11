@@ -1,51 +1,12 @@
 ---
-title: "Ambiente de Desarrollo"
+title: "Configuracion de la Raspberry Pi"
 description: ""
-date: 2023-08-10T14:54:08Z
-lastmod: 2023-08-10T14:54:08Z
+date: 2023-08-11T00:57:51Z
+lastmod: 2023-08-11T00:57:51Z
 draft: false
 images: []
-weight: 2
+weight: 30
 ---
-
-
-
-La configuración del ambiente de trabajo para el curso se segmenta en dos partes:
-
-- Configuración del ambiente en tu computador (Windows, Linux, Mac): Es necesario tener instalado el framework de desarrollo ESP-IDF para programar el ESP-32.
-
-- Configuración de la Raspberry Pi: Deberán instalar el sistema operativo Raspbian (una distribución de Linux) y preparar el ambiente para ejecutar su código en él. Además, es esencial configurar la Raspberry Pi para que funcione como un Hotspot WiFi, permitiendo que el ESP-32 se conecte directamente sin la necesidad de un router externo. Aunque pueda parecer complicado, es sencillo si se siguen las instrucciones detalladas en la sección de configuración de la Raspberry Pi.
-
-## Configuración del ambiente de su computador
-
-### Instalación de ESP-IDF
-
-1. Visite el sitio oficial de [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/) y descargue la última versión del framework.
-
-    - Windows: [Instrucciones](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html)
-    - Mac y Linux: [Instrucciones](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
-
-2. Siga las instrucciones de instalación específicas para su sistema operativo (Windows, Linux o Mac).
-
-3. Una vez instalado, verifique la instalación ejecutando un ejemplo básico para asegurarse de que todo funciona correctamente. Para esto se recomienda ir al directorio donde instalaron el repositorio de esp-idf (si siguieron tal como sale deberia ser lo siguiente)
-
-En linux o mac.
-
-```bash
-cd ~/esp/hello_world
-idf.py build
-```
-
-En windows
-
-```bash
-cd %userprofile%\esp\hello_world
-idf.py build
-```
-
-Si al correr esto no les da ningun error, entonces ya tienen instalado el framework correctamente.
-
-## Configuracion de la Raspberry Pi
 
 ### Instalacion del sistema operativo
 

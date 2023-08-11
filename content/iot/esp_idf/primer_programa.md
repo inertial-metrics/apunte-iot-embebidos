@@ -5,6 +5,7 @@ date: 2023-08-10T20:21:31Z
 lastmod: 2023-08-10T20:21:31Z
 draft: false
 images: []
+weight: 20
 ---
 
 ## Estructura de un proyecto ESP-IDF
