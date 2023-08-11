@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
     <!-- Default to light theme -->
-    <link id="syntax-style" rel="stylesheet" href="/css/github.css">
+    <link id="syntax-style" data-base = "{{ .Site.BaseURL }}" rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css">
   
     {{ block "head/resource-hints" . }}{{ partial "head/resource-hints.html" . }}{{ end }}
     {{ block "head/script-header" . }}{{ partial "head/script-header.html" . }}{{ end }}
