@@ -13,10 +13,8 @@ images: []
 
 La ESP32 es una placa que tiene soporte nativo para WiFi. Esta guía te ayudará a entender y configurar la conexión WiFi en tu dispositivo ESP32.
 
-
 - **Conectividad Inalámbrica**: Permite que la ESP32 se conecte a redes locales sin cables, facilitando su integración en proyectos IoT.
 - **Modos Dual**: Puede funcionar como un dispositivo conectado a una red (estación) o como un punto de acceso para otros dispositivos.
-
 
 ### 1. Iniciar el subsistema WiFi:
 
@@ -28,23 +26,22 @@ que se realiza una conexión WiFi.
 De forma resumida el codigo se compone de los siguiente:
 
 - Definiciones:
-    
-    - Definimos el nombre de la red WiFi y la contraseña.
 
-    - Definimos las variables de WiFi.
+  - Definimos el nombre de la red WiFi y la contraseña.
+
+  - Definimos las variables de WiFi.
 
 - Funciones:
+  
+  - `event_handler`: Esta función se encarga de manejar los eventos de WiFi.
 
-    - `event_handler`: Esta función se encarga de manejar los eventos de WiFi.
+  - `wifi_init_sta`: Esta función se encarga de iniciar el subsistema WiFi.
 
-    - `wifi_init_sta`: Esta función se encarga de iniciar el subsistema WiFi.
-
-    - `nvs_flash_init`: Esta función se encarga de inicializar la memoria flash la cual es necesaria para el funcionamiento de WiFi.
+  - `nvs_flash_init`: Esta función se encarga de inicializar la memoria flash la cual es necesaria para el funcionamiento de WiFi.
 
 - Función principal:
 
-    - `app_main`: Esta función es la función principal del programa, en ella se llama a las funciones anteriores y se ejecuta el programa.
-
+  - `app_main`: Esta función es la función principal del programa, en ella se llama a las funciones anteriores y se ejecuta el programa.
 
 ```c++
 #include <stdio.h>
