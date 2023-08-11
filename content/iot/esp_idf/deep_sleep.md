@@ -1,5 +1,5 @@
 ---
-title: "Delays Deep Sleep y Reinicio"
+title: "Delays, Deep Sleep y Reinicio"
 description: ""
 date: 2023-08-11T00:52:22Z
 lastmod: 2023-08-11T00:52:22Z
