@@ -9,14 +9,13 @@ titleAddition = "Wiki para los cursos de IoT y Embedidos"
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
-ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+# images = ["doks.png"]
+ogLocale = "es_CL"
+titleHome = "Apuntes de IoT y Embedidos"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "dccuchile"
+twitterCreator = "dccuchile"
 
 ## JSON-LD
 # schemaType = "Person"
@@ -24,7 +23,7 @@ schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
 schemaAuthorGitHub = "https://github.com/alberto-abarzua/apunte-iot-embedidos"
-schemaLocale = "en-US"
+schemaLocale = "es-CL"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
@@ -84,7 +83,7 @@ editPage = false
 lastMod = false
 
 [sections]
-  sectionNav = ["docs", "guides"]
+  sectionNav = ["iot", "embedidos"]
 
 [options]
   lazySizes = true
