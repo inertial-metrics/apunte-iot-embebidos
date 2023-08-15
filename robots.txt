@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iot-embedidos.cl/sitemap.xml
+Sitemap: https://iot-embebidos.cl/sitemap.xml
