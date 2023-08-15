@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "IoT - embebidos"
+title = "IoT - Embebidos"
 titleSeparator = "-"
-titleAddition = "Wiki para los cursos de IoT y embebidos"
+titleAddition = "Wiki para los cursos de IoT y Embebidos"
 
 ## Documentation
 # docsVersion = "0.3"
@@ -11,7 +11,7 @@ titleAddition = "Wiki para los cursos de IoT y embebidos"
 ## Open Graph
 # images = ["doks.png"]
 ogLocale = "es_CL"
-titleHome = "Apuntes de IoT y embebidos"
+titleHome = "Apuntes de IoT y Embebidos"
 
 ## Twitter Cards
 twitterSite = "dccuchile"
