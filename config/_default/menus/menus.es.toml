@@ -32,7 +32,7 @@
 #  embebidos NAVIGATION
 
 [[main]]
-    name = "embebidos"
+    name = "Embebidos"
     url = "/embebidos/prologue/introduction/"
     weight = 20
     identifier = "embebidos-menu"
