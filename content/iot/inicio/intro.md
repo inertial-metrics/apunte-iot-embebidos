@@ -23,6 +23,10 @@ Al final, juntaremos lo que hemos aprendido de los dos protocolos y haremos una 
 
 Por el lado de la Raspberry Pi se encuentra el software que interactua con la ESP-32, para esto se utilizara principalmente Python.
 
+### Datasheet:
+
+- [Datasheet Raspberry Pi 3 Model B+](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/datasheets/rasp.pdf)
+
 ## ESP-32
 
 <figure>
@@ -30,4 +34,14 @@ Por el lado de la Raspberry Pi se encuentra el software que interactua con la ES
     <figcaption style="text-align: center;">ESP-32 placa de desarrollo</figcaption>
 </figure>
 
-Por el lado de la ESP-32 se encuentra el firmware que interactua con la Raspberry Pi, para esto se utilizara principalmente C/C++ bajo el framework [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/).
+Por el lado de la ESP-32 se encuentra el firmware que interactua con la Raspberry Pi, para esto se utilizara principalmente C/C++ bajo el framework ESP-IDF.
+
+### Datasheet:
+
+- [Datasheet ESP-32](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/datasheets/esp_32.pdf)
+
+## Que es ESP-IDF?
+
+ESP-IDF (Espressif IoT Development Framework) es un conjunto de herramientas y bibliotecas de desarrollo para programar los microcontroladores ESP32 y ESP32-S producidos por Espressif Systems. Proporciona un marco para escribir aplicaciones en C/C++, facilitando la comunicación con diversos periféricos y el manejo de tareas en tiempo real. ESP-IDF viene con soporte para una variedad de características como Wi-Fi, Bluetooth, y periféricos GPIO, lo que lo hace útil para el desarrollo de aplicaciones de Internet de las Cosas (IoT). Utiliza el sistema de compilación CMake, lo que facilita la integración con varios entornos de desarrollo y la automatización de la compilación y carga de programas en los dispositivos.
+
+**Pagina oficial:** [https://docs.espressif.com/projects/esp-idf/en/latest/esp32/](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/)
