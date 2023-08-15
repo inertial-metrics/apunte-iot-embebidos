@@ -108,4 +108,4 @@ Por lo menos el lado de Python se espera que sea conocido por el estudiante dado
 
 ## Codigo del Ejemplo
 
-* [Cliente y Socket TCP](https://github.com/alberto-abarzua/apunte-iot-embedidos/tree/main/ejemplos/tcp_server_client.zip)
+* [Cliente y Socket TCP](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/tcp_server_client.zip)

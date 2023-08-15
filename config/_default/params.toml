@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "IoT - Embedidos"
+title = "IoT - embebidos"
 titleSeparator = "-"
-titleAddition = "Wiki para los cursos de IoT y Embedidos"
+titleAddition = "Wiki para los cursos de IoT y embebidos"
 
 ## Documentation
 # docsVersion = "0.3"
@@ -11,7 +11,7 @@ titleAddition = "Wiki para los cursos de IoT y Embedidos"
 ## Open Graph
 # images = ["doks.png"]
 ogLocale = "es_CL"
-titleHome = "Apuntes de IoT y Embedidos"
+titleHome = "Apuntes de IoT y embebidos"
 
 ## Twitter Cards
 twitterSite = "dccuchile"
@@ -22,7 +22,7 @@ twitterCreator = "dccuchile"
 schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
-schemaAuthorGitHub = "https://github.com/alberto-abarzua/apunte-iot-embedidos"
+schemaAuthorGitHub = "https://github.com/alberto-abarzua/apunte-iot-embebidos"
 schemaLocale = "es-CL"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -32,7 +32,7 @@ schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/getdoks"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/alberto-abarzua/apunte-iot-embedidos"
+schemaGitHub = "https://github.com/alberto-abarzua/apunte-iot-embebidos"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -76,14 +76,14 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/alberto-abarzua/apunte-iot-embedidos"
+docsRepo = "https://github.com/alberto-abarzua/apunte-iot-embebidos"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false
 lastMod = false
 
 [sections]
-  sectionNav = ["iot", "embedidos"]
+  sectionNav = ["iot", "embebidos"]
 
 [options]
   lazySizes = true
