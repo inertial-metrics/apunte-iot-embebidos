@@ -15,6 +15,6 @@ images: []
 
 - [Video](https://www.u-cursos.cl/ingenieria/2023/2/CC5326/1/material_docente/detalle?id=6949333)
 
-### Clase 3 
+### Clase 3
 
 - [Video](https://www.u-cursos.cl/ingenieria/2023/2/CC5326/1/material_docente/detalle?id=7000645)
