@@ -9,8 +9,12 @@ images: []
 
 ### Clase 1 - Introduccion al curso
 
-- [Video](https://youtu.be/LDOJwOGl4ss)
+- [Video](https://www.u-cursos.cl/ingenieria/2023/2/CC5326/1/material_docente/detalle?id=6900345)
 
 ### Clase 2 - Introducción al tema de Internet de las Cosas
 
-- [Video](https://youtu.be/F8rJDWWA1Lg)
+- [Video](https://www.u-cursos.cl/ingenieria/2023/2/CC5326/1/material_docente/detalle?id=6949333)
+
+### Clase 3 
+
+- [Video](https://www.u-cursos.cl/ingenieria/2023/2/CC5326/1/material_docente/detalle?id=7000645)
