@@ -13,7 +13,8 @@ Para completar las tarea, tendrán que establecer un servidor Python en la Raspb
 ### Instalacion del sistema operativo
 
 1. Obtengan una tarjeta mini SD donde puedan instalar el sistema operativo y que sirva como memoria.
-2. Instalen el Rasp PI OS. El instalador está disponible en esta página.
+2. Instalen el Rasp PI OS. El instalador está disponible [En esta pagina](https://projects.raspberrypi.org/es-LA/projects/raspberry-pi-setting-up/0).
+
 3. Con la tarjeta insertada, conecten la Raspberry Pi a:
    - Una pantalla mediante un cable HDMI (Nota: En Beauchef, especialmente en áreas del DCC como el laboratorio Toqui, las pantallas no tienen entrada HDMI).
    - Un mouse.
