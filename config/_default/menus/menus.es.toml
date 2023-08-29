@@ -23,12 +23,6 @@
     url = "/iot/tareas/"
     parent = "iot-menu"
 
-[[main]]
-    name = "Clases"
-    identifier = "clases-iot"
-    weight = 50
-    url = "/iot/clases/"
-    parent = "iot-menu"
 #  embebidos NAVIGATION
 
 [[main]]
