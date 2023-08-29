@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  db:
+      image: postgres:15.2
+      environment:
+        - POSTGRES_DB = 'db'
+        - POSTGRES_USER = 'postgres'
+        - POSTGRES_PASSWORD = 'postgres'
+      volumes:
+        - postgres_data_iot:/var/lib/postgresql/data/
+      restart: unless-stopped # Hace que el contenedor se reinicie a menos que se detenga manualmente 
+      ports:
+        - 5432:5432 # Puerto de postgres
+
+# Aqui deberian agregar adminer o pgadmin4 (Les sera util intentenlo!)
