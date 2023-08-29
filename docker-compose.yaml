@@ -8,4 +8,8 @@ services:
     ports:
       - "1313:1313"
     volumes:
-      - .:/app
+      - ./content:/app/content
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./ejemplos:/app/ejemplos
+      - ./layouts:/app/layouts
