@@ -23,6 +23,13 @@
     url = "/iot/tareas/"
     parent = "iot-menu"
 
+[[main]]
+    name = "Auxiliares"
+    identifier = "auxiliares-iot"
+    weight = 50
+    url = "/iot/auxiliares/"
+    parent = "iot-menu"
+
 #  embebidos NAVIGATION
 
 [[main]]
