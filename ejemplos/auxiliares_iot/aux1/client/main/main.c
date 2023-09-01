@@ -15,11 +15,11 @@
 
 //Credenciales de WiFi
 
-#define WIFI_SSID "SSID"
-#define WIFI_PASSWORD "PASSOWRD"
-#define SERVER_IP     "192.168.0.1" // IP del servidor
+#define WIFI_SSID "ssid"
+#define WIFI_PASSWORD "password"
+#define SERVER_IP     "192.168.0.247" // IP del servidor
 #define SERVER_PORT   1234
-#define DEVICE_NAME  "La esp de juan" // Pongan el nombre que quieran
+#define DEVICE_NAME  "Nombre de su esp" // Pongan el nombre que quieran
 
 // Variables de WiFi
 #define WIFI_CONNECTED_BIT BIT0
@@ -147,15 +147,22 @@ void socket_tcp(){
     }
     ESP_LOGI(TAG, "Datos recibidos: %s", rx_buffer);
     // Si recibimos OK, mandamos el mensaje
+    rx_buffer[2] = '\0'; 
     if(strcmp(rx_buffer,"OK")!=0){
         ESP_LOGE(TAG, "Error al recibir OK");
         return;
     }
-
-    // Enviar mensaje "Hola Mundo"
+    int count = 1; 
     while(1){
 
-        send(sock, "hola mundo", strlen("hola mundo"), 0);
+
+        char msg[128]; 
+
+        sprintf(msg, "si eso mismo %d", count);
+
+        count++;
+        ESP_LOGI(TAG, "Enviando mensaje: %s", msg);
+        send(sock, msg, strlen(msg), 0);
 
         char rx_buffer[128];
         int rx_len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
@@ -165,13 +172,11 @@ void socket_tcp(){
         }
         ESP_LOGI(TAG, "Datos recibidos: %s", rx_buffer);
 
-        // Esperar 5 segundos
         vTaskDelay(5000 / portTICK_PERIOD_MS);
         
     }
 
     
-    // Cerrar el socket
     close(sock);
 }
 
