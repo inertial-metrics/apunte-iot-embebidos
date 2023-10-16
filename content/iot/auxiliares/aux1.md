@@ -1,9 +1,10 @@
 ---
-title: "Auxiliar 1"
+title: "Auxiliar 1 - WiFi y ESP-IDF"
 description: ""
 date: 2023-09-01T14:35:35Z
 lastmod: 2023-09-01T14:35:35Z
 draft: false
+weight: 100
 images: []
 ---
 
