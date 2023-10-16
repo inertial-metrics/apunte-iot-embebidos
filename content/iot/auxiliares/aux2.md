@@ -25,7 +25,6 @@ _CC5326 – Diseño de Internet de las Cosas_
 
 ## Flujo de conexión ble
 
-
 ### 1. Anuncio
 
 El dispositivo que actúa como servidor (en este caso el ESP32) debe anunciar que está disponible para conectarse. Esto se hace mediante un paquete llamado `advertising packet` que se envía a través de la frecuencia de radio. Este paquete contiene información como el nombre del dispositivo, el tipo de dispositivo, el fabricante, etc.
@@ -42,7 +41,6 @@ En codigo por parte del cliente se logra mediante:
 
 ```python
 from bleak import BleakScanner
-
 
 async def discover():
     # Con esto podemos ver los dispositivos que estan disponibles
@@ -65,8 +63,6 @@ async def connect(device_mac):
 Para leer y escribir características, el cliente debe conocer el UUID de la característica. El UUID es un identificador único que se utiliza para identificar una característica.
 
 En codigo por parte del cliente se logra mediante:
-
-
 
 ```python
 
@@ -157,6 +153,7 @@ Este lo pueden utilizar para mandar la configuracion de la base de datos por par
     break;
   }
 ```
+
 Para leer datos desde el cliente al servidor deben de utilizar el Read Event, este se llamara cuando desde el lado del cliente se envie un
 `client.read_gatt_char` donde los datos enviados estaran en la variable `param->read.value` y el largo de estos en `param->read.len`
 
@@ -193,5 +190,3 @@ Para esto puden tomar varias rutas.
 1. Coordinaar la generacion de datos con el servidor y el cliente para que siempre que se lea existan datos nuevos
 
 2. Subscribirse a las notificaciones de la caracteristica (por el lado del cliente), de esta forma el cliente sabra cuando debe de leer los datos. (Hay mas info de esto en el apunte)
-
-
