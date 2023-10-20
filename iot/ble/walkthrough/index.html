@@ -45,7 +45,16 @@ Auxiliares</button><div class=collapse id=section-7690392266ce928e0f4dea767a80b8
 </span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>bleak</span> <span class=kn>import</span> <span class=n>BleakClient</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>ADDRESS</span> <span class=o>=</span> <span class=s2>&#34;24:71:89:cc:09:05&#34;</span>
-</span></span><span class=line><span class=cl><span class=n>CHARACTERISTIC_UUID</span> <span class=o>=</span> <span class=s2>&#34;0xFF01&#34;</span> <span class=c1># Busquen este valor en el codigo de ejemplo de esp-idf </span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>CHARACTERISTIC_UUID</span> <span class=o>=</span> <span class=n>convert_to_128bit_uuid</span><span class=p>(</span><span class=mh>0xFF01</span><span class=p>)</span> <span class=c1># Busquen este valor en el codigo de ejemplo de esp-idf</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>convert_to_128bit_uuid</span><span class=p>(</span><span class=n>short_uuid</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=c1># Usada para convertir un UUID de 16 bits a 128 bits</span>
+</span></span><span class=line><span class=cl>    <span class=c1># Los bits fijos son utilizados para BLE ya que todos los UUID de BLE son de 128 bits</span>
+</span></span><span class=line><span class=cl>    <span class=c1># y tiene este formato: 0000XXXX-0000-1000-8000-00805F9B34FB</span>
+</span></span><span class=line><span class=cl>    <span class=n>base_uuid</span> <span class=o>=</span> <span class=s2>&#34;00000000-0000-1000-8000-00805F9B34FB&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=n>short_uuid_hex</span> <span class=o>=</span> <span class=s2>&#34;</span><span class=si>{:04X}</span><span class=s2>&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span><span class=n>short_uuid</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>base_uuid</span><span class=p>[:</span><span class=mi>4</span><span class=p>]</span> <span class=o>+</span> <span class=n>short_uuid_hex</span> <span class=o>+</span> <span class=n>base_uuid</span><span class=p>[</span><span class=mi>8</span><span class=p>:]</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>async</span> <span class=k>def</span> <span class=nf>main</span><span class=p>(</span><span class=n>ADDRESS</span><span class=p>):</span>
 </span></span><span class=line><span class=cl>    <span class=k>async</span> <span class=k>with</span> <span class=n>BleakClient</span><span class=p>(</span><span class=n>ADDRESS</span><span class=p>)</span> <span class=k>as</span> <span class=n>client</span><span class=p>:</span>
