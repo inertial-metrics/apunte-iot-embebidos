@@ -53,9 +53,6 @@ Por el lado de python existen varias librerias, una de estas puede ser `bleak`, 
 import asyncio
 from bleak import BleakClient
 
-ADDRESS = "24:71:89:cc:09:05"
-
-CHARACTERISTIC_UUID = convert_to_128bit_uuid(0xFF01) # Busquen este valor en el codigo de ejemplo de esp-idf
 
 def convert_to_128bit_uuid(short_uuid):
     # Usada para convertir un UUID de 16 bits a 128 bits
@@ -64,6 +61,11 @@ def convert_to_128bit_uuid(short_uuid):
     base_uuid = "00000000-0000-1000-8000-00805F9B34FB"
     short_uuid_hex = "{:04X}".format(short_uuid)
     return base_uuid[:4] + short_uuid_hex + base_uuid[8:]
+
+
+ADDRESS = "24:71:89:cc:09:05"
+CHARACTERISTIC_UUID = convert_to_128bit_uuid(0xFF01) # Busquen este valor en el codigo de ejemplo de esp-idf
+
 
 async def main(ADDRESS):
     async with BleakClient(ADDRESS) as client:
