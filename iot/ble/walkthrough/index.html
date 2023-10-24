@@ -44,9 +44,6 @@ Auxiliares</button><div class=collapse id=section-7690392266ce928e0f4dea767a80b8
 </span></span></code></pre></div><p>Esto funcionara en linux (Incluyendo la Raspberry Pi), tambien existen aplicaciones moviles que permiten ver los dispositivos BLE (lo pueden buscar como BLE scanner en la tienda de aplicaciones de su celular).</p><h2 id=paso-3-la-primera-conexion>Paso 3: La primera conexion <a href=#paso-3-la-primera-conexion class=anchor aria-hidden=true>#</a></h2><p>Ahora que sabemos que funciona correctamente nuestro dispositivo BLE podemos empezar a programar tanto el cliente como el servidor.</p><p>Por el lado de python existen varias librerias, una de estas puede ser <code>bleak</code>, un breve ejemplo de la documentacion de bleak es el siguiente:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>asyncio</span>
 </span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>bleak</span> <span class=kn>import</span> <span class=n>BleakClient</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=n>ADDRESS</span> <span class=o>=</span> <span class=s2>&#34;24:71:89:cc:09:05&#34;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=n>CHARACTERISTIC_UUID</span> <span class=o>=</span> <span class=n>convert_to_128bit_uuid</span><span class=p>(</span><span class=mh>0xFF01</span><span class=p>)</span> <span class=c1># Busquen este valor en el codigo de ejemplo de esp-idf</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>convert_to_128bit_uuid</span><span class=p>(</span><span class=n>short_uuid</span><span class=p>):</span>
 </span></span><span class=line><span class=cl>    <span class=c1># Usada para convertir un UUID de 16 bits a 128 bits</span>
@@ -55,6 +52,11 @@ Auxiliares</button><div class=collapse id=section-7690392266ce928e0f4dea767a80b8
 </span></span><span class=line><span class=cl>    <span class=n>base_uuid</span> <span class=o>=</span> <span class=s2>&#34;00000000-0000-1000-8000-00805F9B34FB&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>short_uuid_hex</span> <span class=o>=</span> <span class=s2>&#34;</span><span class=si>{:04X}</span><span class=s2>&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span><span class=n>short_uuid</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>base_uuid</span><span class=p>[:</span><span class=mi>4</span><span class=p>]</span> <span class=o>+</span> <span class=n>short_uuid_hex</span> <span class=o>+</span> <span class=n>base_uuid</span><span class=p>[</span><span class=mi>8</span><span class=p>:]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>ADDRESS</span> <span class=o>=</span> <span class=s2>&#34;24:71:89:cc:09:05&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>CHARACTERISTIC_UUID</span> <span class=o>=</span> <span class=n>convert_to_128bit_uuid</span><span class=p>(</span><span class=mh>0xFF01</span><span class=p>)</span> <span class=c1># Busquen este valor en el codigo de ejemplo de esp-idf</span>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>async</span> <span class=k>def</span> <span class=nf>main</span><span class=p>(</span><span class=n>ADDRESS</span><span class=p>):</span>
 </span></span><span class=line><span class=cl>    <span class=k>async</span> <span class=k>with</span> <span class=n>BleakClient</span><span class=p>(</span><span class=n>ADDRESS</span><span class=p>)</span> <span class=k>as</span> <span class=n>client</span><span class=p>:</span>
