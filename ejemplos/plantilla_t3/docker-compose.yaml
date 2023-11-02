@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend/src/:/app/src
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/src/:/app/src
+
+  db:
+    image: postgres:15.2
+    environment:
+      - POSTGRES_DB=iot_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_NAME=postgres
+    volumes:
+      - postgres_data_iot:/var/lib/postgresql/data
+    restart: unless-stopped # Hace que el contenedor se reinicie a menos que se detenga manualmente
+    ports:
+      - 5432:5432 # Puerto de postgres
+  # Aqui el resto de servicios
+volumes:
+  postgres_data_iot:
