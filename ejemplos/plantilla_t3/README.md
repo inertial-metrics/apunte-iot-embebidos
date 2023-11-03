@@ -33,6 +33,10 @@ La siguiente plantilla está diseñada para integrar las siguientes tecnologías
   ```bash
   uvicorn src.main:app --reload --host "0.0.0.0" --port 8000
   ```
+  - Para ejecutar el frontend, ejecute:
+  ```bash
+  npm run dev
+  ```
 
 - **Estilización CSS**: Existen varias estrategias para agregar CSS a los componentes:
 
