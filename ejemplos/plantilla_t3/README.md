@@ -71,8 +71,37 @@ Para interactuar con Docker, aquí hay algunos comandos útiles:
   ```bash
   npm install <nombre de la dependencia>
   ```
+## Como agregar dependencias en el backend
+
+1. Agregar a requirements.txt la dependencia
+
+2. Buildear la imagen del backend
+
+  ```bash
+  docker compose build backend
+  # O mas corto para buildear todos los servicios
+  docker compose build
+  ```
+## Como agregar dependencias al frontend
+
+1. Agregar usando npm y docker compose run
+
+  ```bash
+  docker compose run frontend npm install <nombre de la dependencia>
+  ```
+
+2. Buildear la imagen del frontend
+
+  ```bash
+  docker compose build frontend
+  # O mas corto para buildear todos los servicios
+  docker compose build
+  ```
+
 
 - **Otros comandos útiles**:
   - `docker compose down`: Detiene y elimina todos los contenedores.
   - `docker compose up`: Inicia y ejecuta la aplicación con servicios asociados.
   - `docker compose up -d`: Ejecuta los servicios en segundo plano.
+  - `docker compose build`: Construye o reconstruye los servicios.
+  - `docker compose build --no-cache`: Construye o reconstruye los servicios sin usar la memoria caché, esto puede ser util para debugear (si algo no les funciona es una buena opcion partir con esto)

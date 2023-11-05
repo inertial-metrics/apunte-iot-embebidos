@@ -104,27 +104,30 @@ Vite mejora la eficiencia del proceso de desarrollo al proporcionar un refresco 
 
 ### Uso de React y Creación de Componentes
 
-Para usar React, se suele iniciar con la creación de componentes. Estos se definen generalmente en archivos `.jsx` y se componen de JSX y lógica JavaScript.
 
-Para crear un componente:
+Un componente en React puede pensarse como una unidad de la interfaz de usuario. Por ejemplo, un botón, un formulario o una tarjeta. Estos componentes pueden ser anidados, reutilizados y gestionados de forma independiente.
 
-```jsx
-function Welcome(props) {
+La estructura básica de un componente en React es una función o una clase que retorna JSX. El JSX es una extensión de JavaScript que permite escribir estructuras de HTML dentro del código JavaScript.
+
+**Componente Funcional**:
+
+```javascript
+const Welcome = (props) => {
     return <h1>Hello, {props.name}</h1>;
 }
 ```
 
 ### Hooks en React
 
-Los hooks son funciones que permiten a los componentes funcionales de React acceder a características como el estado y el ciclo de vida.
+Los hooks son una adición reciente en React que permiten usar estado y otras características de React sin escribir una clase. Antes de los hooks, si querías utilizar estado o ciclos de vida en tus componentes, necesitabas convertirlos en componentes basados en clases. Pero con la introducción de los hooks, estas funcionalidades se pueden lograr en componentes funcionales.
 
-**useState**: permite a los componentes funcionales tener estado.
+**useState**: Es el hook que permite a los componentes funcionales tener acceso al estado. El `useState` devuelve un par: el valor del estado actual y una función que permite actualizarlo.
 
 ```javascript
 const [count, setCount] = useState(0);
 ```
 
-**useEffect**: permite la ejecución de efectos secundarios en componentes.
+**useEffect**: Es utilizado para realizar efectos secundarios en componentes funcionales. Los efectos secundarios pueden ser cualquier cosa que afecta algo fuera del ámbito del componente, como cambios en el DOM, suscripciones, solicitudes de red y más. El hook `useEffect` toma dos argumentos: una función que contiene el código del efecto y una matriz de dependencias.
 
 ```javascript
 useEffect(() => {
@@ -132,12 +135,14 @@ useEffect(() => {
 }, [count]);
 ```
 
+Los hooks han sido una revolución en la forma en que se escribe el código en React. Simplifican el código al eliminar la necesidad de clases, facilitan la reutilización de lógica y proporcionan una forma más clara y concisa de trabajar con efectos y estado en React.
+
 **Ejemplo de un Componente con Hooks (Contador)**:
 
-```jsx
+```javascript
 import React, { useState } from 'react';
 
-function Counter() {
+const Counter = () => {
     const [count, setCount] = useState(0);
 
     return (
@@ -148,6 +153,8 @@ function Counter() {
     );
 }
 ```
+
+Con la integración de hooks, React ofrece una mayor flexibilidad y eficiencia, permitiendo a los desarrolladores construir aplicaciones más limpias y modulares.
 
 ### Tailwind CSS: Un Framework de Utilidad
 
@@ -218,6 +225,22 @@ Como puedes ver, con Tailwind CSS se pueden aplicar estilos rápidamente usando 
 
 - [Documentación](https://tailwindcss.com/docs)
 
+Lo bueno de tailwind es que no es necesario conocer a fondo CSS para poder usarlo, ya que es muy intuitivo y facil de usar.
+
+Una vez que se aprende a usar tailwind, se puede usar en cualquier proyecto, ya que es muy versatil y se puede usar en cualquier framework.
+
+Un video entretenido que muestra su potencial es este:
+
+- [Video](https://www.youtube.com/watch?v=pfaSUYaSgRo&ab_channel=Fireship)
+
+
 #### Mas sobre React
 
+Es muy recomendable revisar la documentación oficial de React para aprender más sobre el framework y sus características.
+
 - [Documentación](https://react.dev/learn)
+
+Les puede ser muy util ver algun tutorial de React en Youtube (hay muchos), pero les recomiendo este:
+
+- [Tutorial de React](https://www.youtube.com/watch?v=SqcY0GlETPk&ab_channel=ProgrammingwithMosh)
+
