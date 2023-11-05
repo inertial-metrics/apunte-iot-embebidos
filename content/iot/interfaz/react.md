@@ -104,7 +104,6 @@ Vite mejora la eficiencia del proceso de desarrollo al proporcionar un refresco 
 
 ### Uso de React y Creación de Componentes
 
-
 Un componente en React puede pensarse como una unidad de la interfaz de usuario. Por ejemplo, un botón, un formulario o una tarjeta. Estos componentes pueden ser anidados, reutilizados y gestionados de forma independiente.
 
 La estructura básica de un componente en React es una función o una clase que retorna JSX. El JSX es una extensión de JavaScript que permite escribir estructuras de HTML dentro del código JavaScript.
@@ -233,7 +232,6 @@ Un video entretenido que muestra su potencial es este:
 
 - [Video](https://www.youtube.com/watch?v=pfaSUYaSgRo&ab_channel=Fireship)
 
-
 #### Mas sobre React
 
 Es muy recomendable revisar la documentación oficial de React para aprender más sobre el framework y sus características.
@@ -243,4 +241,3 @@ Es muy recomendable revisar la documentación oficial de React para aprender má
 Les puede ser muy util ver algun tutorial de React en Youtube (hay muchos), pero les recomiendo este:
 
 - [Tutorial de React](https://www.youtube.com/watch?v=SqcY0GlETPk&ab_channel=ProgrammingwithMosh)
-
