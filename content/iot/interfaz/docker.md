@@ -148,3 +148,7 @@ Docker Compose simplifica muchas de las tareas de gestión de contenedores, espe
 Para mas informacion sobre docker y docker-compose puedes revisar la documentacion oficial
 
 - [Docker](https://docs.docker.com/)
+
+Un 'crash course' de Docker que les puede ser util para utilizar Docker en el desarrollo de sus proyectos.
+
+- [Docker Crash Course](https://www.youtube.com/watch?v=Kyx2PsuwomE)

@@ -17,6 +17,10 @@ services:
     volumes:
       - ./frontend/src/:/app/src
       - ./frontend/package.json:/app/package.json
+      - ./frontend/tailwind.config.js:/app/tailwind.config.js
+      - ./vite.config.js:/app/vite.config.js
+      - ./frontend/public/:/app/public
+      - ./frontend/index.html:/app/index.html
       - ./frontend/package-lock.json:/app/package-lock.json
   db:
     image: postgres:15.2
