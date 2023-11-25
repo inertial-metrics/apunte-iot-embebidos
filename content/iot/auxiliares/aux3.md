@@ -51,7 +51,7 @@ A modo de resumen, las dependencias son:
 
 Para esto se siguieron los siguientes pasos:
 
-1. Crear el proyecto de React
+#### Crear el proyecto de React
 
 ```bash
 npm create vite@latest nombre_del_proyecto --template react
@@ -65,7 +65,7 @@ Luego a este proyecto de react se le agrego tailwindcss, para esto se siguieron 
 
 - [Instalacion de tailwindcss](https://tailwindcss.com/docs/installation)
 
-2. Para la creacion del proyecto de FastAPI se siguieron los siguientes pasos:
+#### Para la creacion del proyecto de FastAPI se siguieron los siguientes pasos:
 
 ```bash
 pip install fastapi
