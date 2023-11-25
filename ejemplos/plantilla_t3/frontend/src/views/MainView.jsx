@@ -1,5 +1,5 @@
 import BaseGraph from "../components/graficos/BaseGraph";
-import SettingsForm from "../components/settings/SettingsFrom";
+import SettingsForm from "../components/settings/SettingsForm";
 import Comment from "../components/utiles/Comment";
 import api from "../utils/api";
 

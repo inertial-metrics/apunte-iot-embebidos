@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-export default function App() {
+const SettingsForm = () => {
   const {
     register,
     handleSubmit,
@@ -47,4 +47,6 @@ export default function App() {
       />
     </form>
   );
-}
+};
+
+export default SettingsForm;
