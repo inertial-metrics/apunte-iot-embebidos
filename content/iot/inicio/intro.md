@@ -17,7 +17,7 @@ Al final, juntaremos lo que hemos aprendido de los dos protocolos y haremos una 
 ## Raspberry Pi
 
 <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Raspberry_Pi_4_Model_B_-_Side.jpg/220px-Raspberry_Pi_4_Model_B_-_Side.jpg" width="300" >
+    <img alt="Raspberry Pi" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Raspberry_Pi_4_Model_B_-_Side.jpg/220px-Raspberry_Pi_4_Model_B_-_Side.jpg" width="300" >
     <figcaption style="text-align: center;">Placa Raspberry Pi</figcaption>
 </figure>
 
