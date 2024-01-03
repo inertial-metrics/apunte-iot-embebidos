@@ -47,7 +47,7 @@
     "autoprefixer": "^10.4.16",
     "bootstrap": "^5.3.2",
     "clipboard": "^2.0",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "exec-bin": "^1.0.0",
     "flexsearch": "^0.7.31",
     "highlight.js": "^11.9",
@@ -62,9 +62,9 @@
     "postcss-cli": "^11.0",
     "purgecss-whitelister": "^2.4",
     "shx": "^0.3.4",
-    "stylelint": "^16.0",
+    "stylelint": "^16.1",
     "stylelint-config-standard-scss": "^12.0",
-    "tailwindcss": "^3.3.6"
+    "tailwindcss": "^3.4.0"
   },
   "otherDependencies": {
     "hugo": "0.107.0"
