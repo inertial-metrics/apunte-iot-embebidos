@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iot-embebidos.cl/sitemap.xml
+Sitemap: https://alberto-abarzua.github.io/apunte-iot-embebidos/sitemap.xml
