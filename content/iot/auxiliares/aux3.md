@@ -28,7 +28,7 @@ _CC5326 – Diseño de Internet de las Cosas_
 
 Esta parte es unicamente para que sepan que se hizo para generar la siguiente plantilla (La misma de la tarea 3)
 
-- [Plantilla](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/plantilla_t3.zip)
+- [Plantilla](https://github.com/inertial-metrics/apunte-iot-embebidos/tree/main/ejemplos/plantilla_t3.zip)
 
 En esta plantilla tenemos:
 

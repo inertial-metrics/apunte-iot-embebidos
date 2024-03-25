@@ -25,7 +25,7 @@ Por el lado de la Raspberry Pi se encuentra el software que interactua con la ES
 
 ### Datasheet:
 
-- [Datasheet Raspberry Pi 3 Model B+](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/datasheets/rasp.pdf)
+- [Datasheet Raspberry Pi 3 Model B+](https://github.com/inertial-metrics/apunte-iot-embebidos/tree/main/ejemplos/datasheets/rasp.pdf)
 
 ## ESP-32
 
@@ -38,7 +38,7 @@ Por el lado de la ESP-32 se encuentra el firmware que interactua con la Raspberr
 
 ### Datasheet:
 
-- [Datasheet ESP-32](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/datasheets/esp_32.pdf)
+- [Datasheet ESP-32](https://github.com/inertial-metrics/apunte-iot-embebidos/tree/main/ejemplos/datasheets/esp_32.pdf)
 
 ## Que es ESP-IDF?
 

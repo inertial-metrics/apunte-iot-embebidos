@@ -57,7 +57,7 @@ void socket_tcp(){
         return;
     }
     ESP_LOGI(TAG, "Datos recibidos: %s", rx_buffer);
-    
+
     // Cerrar el socket
     close(sock);
 }
@@ -108,4 +108,4 @@ Por lo menos el lado de Python se espera que sea conocido por el estudiante dado
 
 ## Codigo del Ejemplo
 
-* [Cliente y Socket TCP](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/tcp_server_client.zip)
+* [Cliente y Socket TCP](https://github.com/inertial-metrics/apunte-iot-embebidos/tree/main/ejemplos/tcp_server_client.zip)

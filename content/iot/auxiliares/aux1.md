@@ -27,9 +27,9 @@ _CC5326 – Diseño de Internet de las Cosas_
 
 ## Indicaciones
 
-1. Realizar la instalación de ESP-IDF en su computador. Para esto pueden ver el apunte del curso [aquí](https://iot-embebidos.cl/iot/inicio/instalacion_esp_idf/)
+1. Realizar la instalación de ESP-IDF en su computador. Para esto pueden ver el apunte del curso [aquí](/iot/inicio/instalacion_esp_idf/)
 
-2. Descargar el siguiente código de ejemplo [aquí](https://github.com/alberto-abarzua/apunte-iot-embebidos/tree/main/ejemplos/auxiliares_iot/aux1.zip)
+2. Descargar el siguiente código de ejemplo [aquí](https://github.com/inertial-metrics/apunte-iot-embebidos/tree/main/ejemplos/auxiliares_iot/aux1.zip)
 
 3. Setear las variables de entorno de ESP-IDF; esto se encuentra en la instalación y depende de cada sistema operativo.
 
